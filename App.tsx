@@ -1,5 +1,7 @@
 import 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
+import { WebView } from 'react-native-webview';
+
 import React from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 

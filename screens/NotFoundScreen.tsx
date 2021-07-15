@@ -9,9 +9,10 @@ export default function NotFoundScreen({
 }: StackScreenProps<RootStackParamList, 'NotFound'>) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>This screen doesn't exist.</Text>
+      <Text style={styles.title}>Упс......</Text>
+      <Text style={styles.title2}>Эта страница не существует!</Text>
       <TouchableOpacity onPress={() => navigation.replace('Root')} style={styles.link}>
-        <Text style={styles.linkText}>Go to home screen!</Text>
+        <Text style={styles.linkText}>На главный экран</Text>
       </TouchableOpacity>
     </View>
   );
@@ -28,6 +29,9 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 20,
     fontWeight: 'bold',
+  },
+  title2: {
+    fontSize: 15,
   },
   link: {
     marginTop: 15,

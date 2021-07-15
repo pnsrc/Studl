@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "hehe",
-    "slug": "hehe",
+    "name": "Studl",
+    "slug": "Studl it's portal for students OATK",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -19,7 +19,7 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false
     },
     "android": {
       "adaptiveIcon": {
@@ -29,6 +29,8 @@
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
-    }
+    },
+    "description": "",
+    "githubUrl": "https://github.com/pnsrc/Studl"
   }
 }
