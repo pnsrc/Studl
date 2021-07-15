@@ -1,20 +1,19 @@
 import * as React from 'react';
-import { StyleSheet, TouchableOpacity } from 'react-native';
+import { StyleSheet,Image, TouchableOpacity,WebBrowser } from 'react-native';
 import Colors from '../constants/Colors';
 import { Text, View } from '../components/Themed';
 
 export default function TabThreeScreen() {
   return (
     <View style={styles.container}>
+      <Image
+        style={styles.stretch}
+        source={require('../assets/images/adaptive-icon.png')}
+      />
       <Text style={styles.title}>Studl</Text>
       <Text style={styles.getStartedText}>Версия 0.0.2b </Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <Text style={styles.helpLinkText}>Разработанно с использованием React Native, и библиотеки React-native-webview</Text>
-        <TouchableOpacity onPress={handleHelpPress} style={styles.helpLink}>
-          <Text style={styles.helpLinkText} lightColor={Colors.light.tint}>
-            Репозиторий GitHub
-          </Text>
-        </TouchableOpacity>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <Text style={styles.getStartedText}>Made by pnsrc with ❤️</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
@@ -24,17 +23,16 @@ export default function TabThreeScreen() {
   );
 }
 
-function handleHelpPress() {
-  WebBrowser.openBrowserAsync(
-    'https://github.com/pnsrc/Studl'
-  );
-}
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  stretch: {
+    width: 200,
+    height: 200,
+    resizeMode: 'stretch',
   },
   title: {
     fontSize: 20,
