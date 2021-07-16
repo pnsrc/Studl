@@ -3,7 +3,7 @@
  * https://reactnavigation.org/docs/bottom-tab-navigator
  */
 
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons, Fontisto, FontAwesome } from '@expo/vector-icons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import * as React from 'react';
@@ -28,21 +28,21 @@ export default function BottomTabNavigator() {
         name="Дневник.РУ"
         component={TabOneNavigator}
         options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name="ios-book" color={color} />,
+          tabBarIcon: ({ color }) => <FontAwesome size={25} name="book" color={color} />,
         }}
       />
       <BottomTab.Screen
         name="Educon"
         component={TabTwoNavigator}
         options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name="ios-pencil" color={color} />,
+          tabBarIcon: ({ color }) => <FontAwesome size={25} name="pencil-square" color={color} />,
         }}
       />
       <BottomTab.Screen
         name="О приложении"
         component={TabThreeNavigator}
         options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name="ios-help" color={color} />,
+          tabBarIcon: ({ color }) => <Fontisto size={25} name="laboratory" color={color} />,
         }}
       />
     </BottomTab.Navigator>
@@ -65,7 +65,7 @@ function TabOneNavigator() {
       <TabOneStack.Screen
         name="TabOneScreen"
         component={TabOneScreen}
-        options={{ headerTitle: 'Дневник.РУ' }}
+        options={{ headerTitle: 'Дневник.Ру' }}
       />
     </TabOneStack.Navigator>
   );

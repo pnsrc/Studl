@@ -1,7 +1,13 @@
 import * as React from 'react';
-import { StyleSheet,Image, TouchableOpacity,WebBrowser } from 'react-native';
+import { StyleSheet,Image, TouchableOpacity,WebBrowser, Linking } from 'react-native';
+import { Avatar, Badge, Icon, withBadge } from 'react-native-elements'
 import Colors from '../constants/Colors';
 import { Text, View } from '../components/Themed';
+import VersionNumber from 'react-native-version-number';
+
+console.log(VersionNumber.appVersion);
+console.log(VersionNumber.buildVersion);
+console.log(VersionNumber.bundleIdentifier);
 
 export default function TabThreeScreen() {
   return (
@@ -11,7 +17,7 @@ export default function TabThreeScreen() {
         source={require('../assets/images/adaptive-icon.png')}
       />
       <Text style={styles.title}>Studl</Text>
-      <Text style={styles.getStartedText}>Версия 0.0.4b</Text>
+      <Text style={styles.getStartedText}>Версия <Badge value={VersionNumber.appVersion} status="error" /> </Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <Text style={styles.helpLinkText}>Разработанно с использованием React Native, и библиотеки React-native-webview</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
@@ -22,6 +28,7 @@ export default function TabThreeScreen() {
       <Text style={styles.getStartedText3}>Приложение собирает логи крашей для отладки.</Text>
     </View>
   );
+
 }
 
 const styles = StyleSheet.create({
