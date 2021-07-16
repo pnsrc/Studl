@@ -1,5 +1,5 @@
 # Studl
-[![Build status](https://build.appcenter.ms/v0.1/apps/485cc12e-d715-4724-bd41-5ba1bfcc9cc5/branches/main/badge)](https://appcenter.ms)
+[![Build status](https://build.appcenter.ms/v0.1/apps/8b619d79-c7c3-4f42-839c-4ddceafbdf39/branches/main/badge)](https://appcenter.ms)
 
 Studl - приложение для студентов ОАТК, где вы имеете быстрый доступ к Дневнику.Ру, а также к Едукон.
 
