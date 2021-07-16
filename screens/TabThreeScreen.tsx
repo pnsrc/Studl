@@ -18,7 +18,7 @@ export default function TabThreeScreen() {
       <Text style={styles.getStartedText}>Версия <Badge value="0.0.7b" status="warning" /> </Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <Pressable onPress={aboutdesc}>
-<Text style={styles.helpLinkText}>Разработанно с использованием React Native</Text>      
+      <Text style={styles.helpLinkText}>Разработанно с использованием React Native</Text>      
       </Pressable>      
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <Pressable onPress={github}>
@@ -42,7 +42,7 @@ function aboutdesc() {
 function github() {
   countgit++
   console.log('Уже нажато:' + countgit)
-  if (countgit ==ы 5) {
+  if (countgit == 5) {
     console.log('Кто-то захотел потыкать и нашел гитхаб')
     ToastAndroid.show("А мог бы попросить, я бы кинул доступ к гитхаб", ToastAndroid.SHORT);
     Linking.openURL('https://github.com/pnsrc/Studl')
