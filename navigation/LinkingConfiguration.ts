@@ -27,6 +27,11 @@ export default {
               TabThreeScreen: 'three',
             },
           },
+          Tab4: {
+            screens: {
+              Tab4Screen: '4',
+            },
+          },          
         },
 
       },

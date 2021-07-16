@@ -25,3 +25,7 @@ export type TabThreeParamList = {
   TabThreeScreen: undefined;
 };
 
+export type Tab4ParamList = {
+  Tab4Screen: undefined;
+};
+

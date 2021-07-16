@@ -1,36 +1,38 @@
 import * as React from 'react';
-import { StyleSheet,Image, TouchableOpacity,WebBrowser,Button,DevSettings, Linking,Alert, ScrollView, Pressable } from 'react-native';
+import { StyleSheet,Image,Button,NativeModules, TouchableOpacity,WebBrowser, Linking,Alert, ScrollView, Pressable } from 'react-native';
 import { Avatar, Badge, Icon, withBadge } from 'react-native-elements'
 import Colors from '../constants/Colors';
 import { Text, View } from '../components/Themed';
 
 
-export default function TabThreeScreen() {
+export default function Tab4Screen() {
   return (
     <ScrollView>
     <View style={styles.container}>
       <Image
         style={styles.stretch}
-        source={require('../assets/images/adaptive-icon.png')}
+        source={require('../assets/images/12.png')}
       />
-      <Text style={styles.title}>Studl</Text>
-      <Text style={styles.getStartedText}>Версия <Badge value="0.0.6b" status="warning" /> </Text>
+      <Text style={styles.title}>EXPEREMENTAL</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <Text style={styles.helpLinkText}>Разработанно с использованием React Native, и библиотеки React-native-webview</Text>
+      <Text style={styles.helpLinkText}>Данное меню является эксперементальным, и любое действие может повлиять на работоспособность приложения. ВСЕ ДЕЙСТВИЯ НА ВАШ СТРАХ И РИСК!</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <Text style={styles.getStartedText}>Made by pnsrc with ❤️</Text>
-      <Text style={styles.getStartedText2}>Логотип и SplashScreen by @elliot_alderson01.</Text>
+      <Text style={styles.getStartedText2}>Все названия кликабельные.</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <Text style={styles.getStartedText2}>Все данные не воруются, Альбине не попадут.</Text>
+      <Pressable onPress={() => NativeModules.DevSettings.reload()}>
+      <Text style={styles.helpLinkText}>Принудительный перезапуск приложения</Text>
+      </Pressable>
+      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
+      <Pressable onPress={() => NativeModules.DevSettings.setLiveReloadEnabled(bool)}>
+      <Text style={styles.helpLinkText}>Включить живую прогрузку элементов</Text>
+      </Pressable>
+      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
     </View>
     </ScrollView>
   );
 
 }
 
-function onPressFunction() {
-  Alert.alert('Что собирается?','Данные об использовании приложении, такие данные как имя устройство, какая вкладка была открыта. ')
-}
 const styles = StyleSheet.create({
   container: {
     flex: 1,

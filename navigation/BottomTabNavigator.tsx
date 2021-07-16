@@ -8,7 +8,8 @@ import useColorScheme from '../hooks/useColorScheme';
 import TabOneScreen from '../screens/TabOneScreen';
 import TabTwoScreen from '../screens/TabTwoScreen';
 import TabThreeScreen from '../screens/TabThreeScreen';
-import { BottomTabParamList, TabOneParamList, TabTwoParamList, TabThreeParamList } from '../types';
+import Tab4Screen from '../screens/Tab4Screen';
+import { BottomTabParamList, TabOneParamList, TabTwoParamList, TabThreeParamList, Tab4ParamList } from '../types';
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
 
@@ -31,6 +32,13 @@ export default function BottomTabNavigator() {
         component={TabTwoNavigator}
         options={{
           tabBarIcon: ({ color }) => <FontAwesome size={25} name="pencil-square" color={color} />,
+        }}
+      />
+      <BottomTab.Screen
+        name="Настройки"
+        component={Tab4Navigator}
+        options={{
+          tabBarIcon: ({ color }) => <FontAwesome size={25} name="gear" color={color} />,
         }}
       />
       <BottomTab.Screen
@@ -87,3 +95,18 @@ function TabThreeNavigator() {
     </TabThreeStack.Navigator>
   );
 }
+
+const Tab4Stack = createStackNavigator<TabThreeParamList>();
+
+function Tab4Navigator() {
+  return (
+    <Tab4Stack.Navigator>
+      <Tab4Stack.Screen
+        name="Tab4Screen"
+        component={Tab4Screen}
+        options={{ headerTitle: 'Настройки' }}
+      />
+    </Tab4Stack.Navigator>
+  );
+}
+
