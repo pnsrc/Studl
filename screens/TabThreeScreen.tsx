@@ -1,9 +1,10 @@
 import * as React from 'react';
-import { StyleSheet,Image, TouchableOpacity,WebBrowser,Button,DevSettings, Linking,Alert, ScrollView, Pressable } from 'react-native';
+import { StyleSheet,Image,ToastAndroid, TouchableOpacity,WebBrowser,Button,DevSettings, Linking,Alert, ScrollView, Pressable } from 'react-native';
 import { Avatar, Badge, Icon, withBadge } from 'react-native-elements'
 import Colors from '../constants/Colors';
 import { Text, View } from '../components/Themed';
 
+var countgit = 0;
 
 export default function TabThreeScreen() {
   return (
@@ -14,21 +15,36 @@ export default function TabThreeScreen() {
         source={require('../assets/images/adaptive-icon.png')}
       />
       <Text style={styles.title}>Studl</Text>
-      <Text style={styles.getStartedText}>Версия <Badge value="0.0.6b" status="warning" /> </Text>
+      <Text style={styles.getStartedText}>Версия <Badge value="0.0.7b" status="warning" /> </Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <Text style={styles.helpLinkText}>Разработанно с использованием React Native, и библиотеки React-native-webview</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
+      <Pressable onPress={github}>
       <Text style={styles.getStartedText}>Made by pnsrc with ❤️</Text>
+      </Pressable>  
       <Text style={styles.getStartedText2}>Логотип и SplashScreen by @elliot_alderson01.</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <Text style={styles.getStartedText2}>Все данные не воруются, Альбине не попадут.</Text>
+      <Pressable onPress={onPressFunction}>
+      <Text style={styles.getStartedText3}>Приложение собирает логи крашей для отладки.</Text>
+      </Pressable>
     </View>
     </ScrollView>
   );
 
 }
-
+console.log('Запуск модуля О приложении')
+function github() {
+  countgit++
+  console.log('Уже нажато:' + countgit)
+  if (countgit == 5) {
+    console.log('Кто-то захотел потыкать и нашел гитхаб')
+    ToastAndroid.show("А мог бы попросить, я бы кинул доступ к гитхаб", ToastAndroid.SHORT);
+    Linking.openURL('https://github.com/pnsrc/Studl')
+  }
+}
 function onPressFunction() {
+  console.log('Кто-то интересуется о том, что мы собираем')
   Alert.alert('Что собирается?','Данные об использовании приложении, такие данные как имя устройство, какая вкладка была открыта. ')
 }
 const styles = StyleSheet.create({

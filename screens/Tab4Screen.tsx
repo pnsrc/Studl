@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyleSheet,Image,Button,NativeModules, TouchableOpacity,WebBrowser, Linking,Alert, ScrollView, Pressable } from 'react-native';
+import { StyleSheet,Image,Button,NativeModules,DevSettings, TouchableOpacity,WebBrowser, Linking,Alert, ScrollView, Pressable } from 'react-native';
 import { Avatar, Badge, Icon, withBadge } from 'react-native-elements'
 import Colors from '../constants/Colors';
 import { Text, View } from '../components/Themed';
@@ -16,23 +16,39 @@ export default function Tab4Screen() {
       <Text style={styles.title}>EXPEREMENTAL</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <Text style={styles.helpLinkText}>Данное меню является эксперементальным, и любое действие может повлиять на работоспособность приложения. ВСЕ ДЕЙСТВИЯ НА ВАШ СТРАХ И РИСК!</Text>
+      <Text style={styles.helpLinkText}>Все названия кликабельные.</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <Text style={styles.getStartedText2}>Все названия кликабельные.</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <Pressable onPress={() => NativeModules.DevSettings.reload()}>
+      <Pressable onPress={reloadtest}>
       <Text style={styles.helpLinkText}>Принудительный перезапуск приложения</Text>
       </Pressable>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <Pressable onPress={() => NativeModules.DevSettings.setLiveReloadEnabled(bool)}>
-      <Text style={styles.helpLinkText}>Включить живую прогрузку элементов</Text>
+      <Pressable onPress={crashtest}>
+      <Badge value="НЕ РЕКОМЕНДУЕМ!" status="warning" />
+      <Text style={styles.helpLinkText}>Иммитировать краш приложения</Text>
       </Pressable>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-    </View>
+      <Pressable onPress={onsettins}>
+      <Text style={styles.helpLinkText}>Открыть "О приложении"</Text>
+      </Pressable>
+      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
+      </View>
     </ScrollView>
   );
 
 }
-
+function onsettins() {
+console.log('Открываем о приложение')
+Linking.openSettings();
+}
+function reloadtest(){
+console.log('Принудительный перезапуск приложения')
+DevSettings.reload()
+}
+function crashtest() {
+Alert.alert('Внимание !', 'Приложение сейчас закроется !')
+console.log('Запуск краштест приложения')
+NativeModules.DevSettings.setLiveReloadEnabled(bool) 
+}
 const styles = StyleSheet.create({
   container: {
     flex: 1,

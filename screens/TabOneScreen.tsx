@@ -11,6 +11,8 @@ export default function TabOneScreen() {
   );
 }
 
+console.log('Запуск модуля Дневник РУ')
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
