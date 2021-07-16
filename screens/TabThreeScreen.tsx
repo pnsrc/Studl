@@ -13,7 +13,7 @@ export default function TabThreeScreen() {
         source={require('../assets/images/adaptive-icon.png')}
       />
       <Text style={styles.title}>Studl</Text>
-      <Text style={styles.getStartedText}>Версия <Badge value="0.0.5b" status="warning" /> </Text>
+      <Text style={styles.getStartedText}>Версия <Badge value="0.0.6b" status="warning" /> </Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <Text style={styles.helpLinkText}>Разработанно с использованием React Native, и библиотеки React-native-webview</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
@@ -34,8 +34,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   stretch: {
-    width: 200,
-    height: 200,
+    width: 150,
+    height: 150,
     resizeMode: 'stretch',
   },
   title: {
