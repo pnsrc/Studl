@@ -17,7 +17,9 @@ export default function TabThreeScreen() {
       <Text style={styles.title}>Studl</Text>
       <Text style={styles.getStartedText}>Версия <Badge value="0.0.7b" status="warning" /> </Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <Text style={styles.helpLinkText}>Разработанно с использованием React Native, и библиотеки React-native-webview</Text>
+      <Pressable onPress={aboutdesc}>
+<Text style={styles.helpLinkText}>Разработанно с использованием React Native</Text>      
+      </Pressable>      
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <Pressable onPress={github}>
       <Text style={styles.getStartedText}>Made by pnsrc with ❤️</Text>
@@ -34,10 +36,13 @@ export default function TabThreeScreen() {
 
 }
 console.log('Запуск модуля О приложении')
+function aboutdesc() {
+  Alert.alert('Список использованного','React\nReact-Native\nAppCenter\nБиблиотеки: react-native-elements, React-native-webview. \n Отдельное спасибо AppCenter за деплоинг, тестирование, а также сбор логов с приложения.')
+}
 function github() {
   countgit++
   console.log('Уже нажато:' + countgit)
-  if (countgit == 5) {
+  if (countgit ==ы 5) {
     console.log('Кто-то захотел потыкать и нашел гитхаб')
     ToastAndroid.show("А мог бы попросить, я бы кинул доступ к гитхаб", ToastAndroid.SHORT);
     Linking.openURL('https://github.com/pnsrc/Studl')
