@@ -20,7 +20,7 @@ export default function TabThreeScreen() {
       <Text style={styles.getStartedText}>Версия <Badge value="0.0.8b" status="error" /> </Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <Pressable onPress={aboutdesc}>
-      <Text style={styles.helpLinkText}>Разработанно с использованием React Native</Text>      
+      <Text style={styles.helpLinkText}>Разработанно с использованием React Native и других библиотек</Text>      
       </Pressable>      
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <Pressable onPress={github}>
