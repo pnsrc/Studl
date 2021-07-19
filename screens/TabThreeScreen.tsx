@@ -2,6 +2,7 @@ import * as React from 'react';
 import { StyleSheet,Image,ToastAndroid, TouchableOpacity,WebBrowser,Button,DevSettings, Linking,Alert, ScrollView, Pressable } from 'react-native';
 import { Avatar, Badge, Icon, withBadge } from 'react-native-elements'
 import Colors from '../constants/Colors';
+
 import { Text, View } from '../components/Themed';
 
 var countgit = 0;
@@ -15,7 +16,7 @@ export default function TabThreeScreen() {
         source={require('../assets/images/adaptive-icon.png')}
       />
       <Text style={styles.title}>Studl</Text>
-      <Text style={styles.getStartedText}>Версия <Badge value="0.0.7b" status="warning" /> </Text>
+      <Text style={styles.getStartedText}>Версия <Badge value="0.0.8b" status="warning" /> </Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <Pressable onPress={aboutdesc}>
       <Text style={styles.helpLinkText}>Разработанно с использованием React Native</Text>      
