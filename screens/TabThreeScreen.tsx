@@ -16,7 +16,7 @@ export default function TabThreeScreen() {
         source={require('../assets/images/adaptive-icon.png')}
       />
       <Text style={styles.title}>Studl</Text>
-      <Text style={styles.getStartedText}>Версия <Badge value="0.0.8b" status="warning" /> </Text>
+      <Text style={styles.getStartedText}>Версия <Badge value="0.0.8b" status="error" /> </Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <Pressable onPress={aboutdesc}>
       <Text style={styles.helpLinkText}>Разработанно с использованием React Native</Text>      
