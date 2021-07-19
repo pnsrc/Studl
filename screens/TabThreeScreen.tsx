@@ -2,6 +2,8 @@ import * as React from 'react';
 import { StyleSheet,Image,ToastAndroid, TouchableOpacity,WebBrowser,Button,DevSettings, Linking,Alert, ScrollView, Pressable } from 'react-native';
 import { Avatar, Badge, Icon, withBadge } from 'react-native-elements'
 import Colors from '../constants/Colors';
+import Constants from 'expo-constants';
+import VersionCheck from 'react-native-version-check';
 
 import { Text, View } from '../components/Themed';
 
@@ -17,7 +19,7 @@ export default function TabThreeScreen() {
       />
       <Text style={styles.title}>Studl</Text>
       <Text style={styles.getStartedText}>Быстрый доступ к ресурсам, для студентов Омского Автотранспортного колледжа. </Text>
-      <Text style={styles.getStartedText}>Версия <Badge value="0.0.8b" status="error" /> </Text>
+      <Text style={styles.getStartedText}>Версия <Badge value={VersionCheck.getCurrentVersion()} status="error" /> </Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <Pressable onPress={aboutdesc}>
       <Text style={styles.helpLinkText}>Разработанно с использованием React Native и других библиотек</Text>      
