@@ -10,7 +10,7 @@ export default function TabTwoScreen() {
           <WebView source={{ uri: 'https://do.oatk.org/' }} />
   );
 }
-console.log('Запуск экрана Едукон')
+console.log('Запуск модуля Едукон')
 
 const styles = StyleSheet.create({
   container: {

@@ -2,7 +2,6 @@ import * as React from 'react';
 import { StyleSheet,Image,ToastAndroid, TouchableOpacity,WebBrowser,Button,DevSettings, Linking,Alert, ScrollView, Pressable } from 'react-native';
 import { Avatar, Badge, Icon, withBadge } from 'react-native-elements'
 import Colors from '../constants/Colors';
-
 import { Text, View } from '../components/Themed';
 
 var countgit = 0;
@@ -16,38 +15,27 @@ export default function TabThreeScreen() {
         source={require('../assets/images/adaptive-icon.png')}
       />
       <Text style={styles.title}>Studl</Text>
-      <Text style={styles.getStartedText}>Быстрый доступ к ресурсам, для студентов Омского Автотранспортного колледжа. </Text>
-      <Text style={styles.getStartedText}>Версия <Badge value="0.0.8b" status="error" /> </Text>
+      <Text style={styles.getStartedText}>Версия <Badge value="0.0.8b" status="warning" /> </Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <Pressable onPress={aboutdesc}>
-      <Text style={styles.helpLinkText}>Разработанно с использованием React Native и других библиотек</Text>      
+      <Text style={styles.helpLinkText}>Написанно на React Native</Text>      
       </Pressable>      
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
+      <Pressable onPress={github}>
+      <Text style={styles.getStartedText}>Made by pnsrc with ❤️</Text>
+      </Pressable>  
       <Text style={styles.getStartedText2}>Логотип и SplashScreen by @elliot_alderson01.</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <Text style={styles.getStartedText2}>Ваши данные не воруются, Альбине не попадут.</Text>
       <Pressable onPress={onPressFunction}>
       <Text style={styles.getStartedText3}>Приложение собирает логи крашей для отладки.</Text>
       </Pressable>
-      <Pressable onPress={github}>
-      <Text style={styles.getStartedText}>Made by pnsrc with ❤️</Text>
-      </Pressable>  
-      <Pressable onPress={onPressTelegram}>
-        <Icon
-          name='sc-telegram'
-          type='evilicon'
-          color='#517fa4'
-        />
-      </Pressable>
-      </View>
+    </View>
     </ScrollView>
   );
 
 }
 console.log('Запуск модуля О приложении')
-function onPressTelegram() {
-    Linking.openURL('https://t.me/iforgetmytelephoneinmypocket')
-}
 function aboutdesc() {
   Alert.alert('Список использованного','React\nReact-Native\nAppCenter\nБиблиотеки: react-native-elements, React-native-webview. \n Отдельное спасибо AppCenter за деплоинг, тестирование, а также сбор логов с приложения.')
 }
