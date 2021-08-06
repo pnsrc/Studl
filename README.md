@@ -1,5 +1,6 @@
 # Studl
 [![Build status](https://build.appcenter.ms/v0.1/apps/5b518e86-33e2-4143-82ff-fefdde939e57/branches/main/badge)](https://appcenter.ms)
+[![wakatime](https://wakatime.com/badge/github/pnsrc/Studl.svg)](https://wakatime.com/badge/github/pnsrc/Studl)
 
 Studl - приложение для студентов ОАТК, где вы имеете быстрый доступ к Дневнику.Ру, а также к Едукон.
 
