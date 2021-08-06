@@ -23,7 +23,7 @@ export default function Tab4Screen() {
       </Pressable>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <Pressable onPress={crashtest}>
-      <Badge value="НЕ РЕКОМЕНДУЕМ!" status="warning" />
+      <Badge value="ОПАСНО !" status="warning" />
       <Text style={styles.helpLinkText}>Иммитировать краш приложения</Text>
       </Pressable>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />

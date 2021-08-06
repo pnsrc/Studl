@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "68376430317",
+    "project_id": "studl-d0f82",
+    "storage_bucket": "studl-d0f82.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:68376430317:android:26383f3609396f80412ee4",
+        "android_client_info": {
+          "package_name": "com.pnsrc89.studl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "68376430317-eip081n5c0aqvk9ojd3vmil2er0elur0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATAhbxpgttInLU9z3MlaJ2dwMSvdz7gxA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "68376430317-eip081n5c0aqvk9ojd3vmil2er0elur0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
