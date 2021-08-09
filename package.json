@@ -44,7 +44,8 @@
     "react-native-unimodules": "~0.14.5",
     "react-native-version-number": "^0.3.6",
     "react-native-web": "~0.13.12",
-    "react-native-webview": "11.6.2"
+    "react-native-webview": "11.6.2",
+    "react-native-windows": "^0.63.0-0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
@@ -54,6 +55,6 @@
     "typescript": "~4.0.0"
   },
   "private": true,
-  "name": "hehe",
+  "name": "studl",
   "version": "1.0.0"
 }

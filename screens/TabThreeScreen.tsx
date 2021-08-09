@@ -15,7 +15,7 @@ export default function TabThreeScreen() {
         source={require('../assets/images/adaptive-icon.png')}
       />
       <Text style={styles.title}>Studl</Text>
-      <Text style={styles.getStartedText}>Версия <Badge value="0.0.9b" status="warning" /> </Text>
+      <Text style={styles.getStartedText}>Версия <Badge value="0.0.10b" status="warning" /> </Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <Pressable onPress={aboutdesc}>
       <Text style={styles.helpLinkText}>Написанно на React Native</Text>      
@@ -26,7 +26,7 @@ export default function TabThreeScreen() {
       </Pressable>  
       <Text style={styles.getStartedText2}>Логотип и SplashScreen by @elliot_alderson01.</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <Pressable onPress={() => Linking.openURL('mailto:pnsrc@yandex.ru?subject=Обратная%20связь%20Studl%200.0.9b')}>
+      <Pressable onPress={() => Linking.openURL('mailto:pnsrc@yandex.ru?subject=Обратная%20связь%20Studl%200.0.10b')}>
       <Text style={styles.getStartedText}>Обратная связь</Text>
       </Pressable>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
