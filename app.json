@@ -2,7 +2,7 @@
   "expo": {
     "name": "Studl",
     "slug": "studl",
-    "version": "0.0.7b",
+    "version": "0.0.12b",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
@@ -10,7 +10,7 @@
     "splash": {
       "image": "./assets/images/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#EE0000"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -22,9 +22,10 @@
       "supportsTablet": false
     },
     "android": {
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#EE0000"
       },
       "package": "com.pnsrc89.studl"
     },

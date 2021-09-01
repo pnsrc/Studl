@@ -29,3 +29,6 @@ export type Tab4ParamList = {
   Tab4Screen: undefined;
 };
 
+export type aboutList = {
+  TabTwoScreen: undefined;
+};
