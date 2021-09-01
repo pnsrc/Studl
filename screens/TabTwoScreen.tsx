@@ -7,7 +7,11 @@ import { Text, View } from '../components/Themed';
 
 export default function TabTwoScreen() {
   return (
-          <WebView source={{ uri: 'https://do.oatk.org/' }} />
+          <WebView source={{ uri: 'https://do.oatk.org/' }}
+            startInLoadingState={true}
+            renderLoading={() => <Loading />}
+            applicationNameForUserAgent={'Studl/0.0.12b'}
+           />
   );
 }
 console.log('Запуск модуля Едукон')
