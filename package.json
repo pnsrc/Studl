@@ -24,7 +24,6 @@
     "expo": "~42.0.1",
     "expo-asset": "~8.3.2",
     "expo-constants": "~11.0.1",
-    "expo-firebase-analytics": "~4.1.0",
     "expo-font": "~9.2.1",
     "expo-linking": "~2.3.1",
     "expo-splash-screen": "~0.11.2",
@@ -44,8 +43,7 @@
     "react-native-unimodules": "~0.14.5",
     "react-native-version-number": "^0.3.6",
     "react-native-web": "~0.13.12",
-    "react-native-webview": "11.6.2",
-    "react-native-windows": "^0.63.0-0"
+    "react-native-webview": "11.6.2"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
@@ -55,6 +53,6 @@
     "typescript": "~4.0.0"
   },
   "private": true,
-  "name": "studl",
+  "name": "hehe",
   "version": "1.0.0"
 }

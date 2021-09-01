@@ -35,7 +35,7 @@ export default function BottomTabNavigator() {
         }}
       />
       <BottomTab.Screen
-        name="EXPEREMENTAL"
+        name="Настройки"
         component={Tab4Navigator}
         options={{
           tabBarIcon: ({ color }) => <FontAwesome size={25} name="gear" color={color} />,
@@ -104,7 +104,7 @@ function Tab4Navigator() {
       <Tab4Stack.Screen
         name="Tab4Screen"
         component={Tab4Screen}
-        options={{ headerTitle: 'EXPEREMENTAL' }}
+        options={{ headerTitle: 'Настройки' }}
       />
     </Tab4Stack.Navigator>
   );

@@ -11,7 +11,7 @@ export default function Tab4Screen() {
     <View style={styles.container}>
       <Image
         style={styles.stretch}
-        source={require('../assets/images/122.gif')}
+        source={require('../assets/images/12.png')}
       />
       <Text style={styles.title}>EXPEREMENTAL</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
@@ -23,7 +23,7 @@ export default function Tab4Screen() {
       </Pressable>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <Pressable onPress={crashtest}>
-      <Badge value="ОПАСНО !" status="warning" />
+      <Badge value="НЕ РЕКОМЕНДУЕМ!" status="warning" />
       <Text style={styles.helpLinkText}>Иммитировать краш приложения</Text>
       </Pressable>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
