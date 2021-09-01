@@ -2,7 +2,7 @@
   "expo": {
     "name": "Studl",
     "slug": "studl",
-    "version": "0.0.13b",
+    "version": "0.0.14b",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
