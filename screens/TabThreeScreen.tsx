@@ -15,7 +15,7 @@ export default function TabThreeScreen() {
         source={require('../assets/images/adaptive-icon.png')}
       />
       <Text style={styles.title}>Studl</Text>
-      <Text style={styles.getStartedText}>Версия <Badge value="0.0.14b" status="warning" /> </Text>
+      <Text style={styles.getStartedText}>Версия <Badge value="0.0.9b" status="warning" /> </Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <Pressable onPress={aboutdesc}>
       <Text style={styles.helpLinkText}>Разработанно с использованием React Native</Text>      
@@ -50,7 +50,7 @@ function github() {
 }
 function onPressFunction() {
   console.log('Кто-то интересуется о том, что мы собираем')
-  Alert.alert('Что собирается?','Данные об использовании приложении, такие данные как имя устройство, какая вкладка была открыта. ')
+  Alert.alert('Для сбора информации мы используем','Google Firebase Analytics - Для сбора статистики\nMicrosoft AppCenter Analytics - для сбора крашей ')
 }
 const styles = StyleSheet.create({
   container: {

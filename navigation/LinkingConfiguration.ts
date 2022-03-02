@@ -31,15 +31,11 @@ export default {
             screens: {
               Tab4Screen: '4',
             },
-          TabAbout: {
-            screens: {
-              about: 'about',
-            },
           },          
         },
+
       },
       NotFound: '*',
     },
-  },
   },
 };

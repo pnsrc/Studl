@@ -7,11 +7,7 @@ import { Text, View } from '../components/Themed';
 
 export default function TabOneScreen() {
   return (
-          <WebView source={{ uri: 'https://dnevnik.ru/' }}
-            startInLoadingState={true}
-            renderLoading={() => <Loading />}
-            applicationNameForUserAgent={'Studl/0.0.12b'}
-           />
+          <WebView source={{ uri: 'https://dnevnik.ru/' }} />
   );
 }
 

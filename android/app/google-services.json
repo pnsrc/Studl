@@ -1,34 +1,41 @@
 {
   "project_info": {
-    "project_number": "68376430317",
-    "project_id": "studl-d0f82",
-    "storage_bucket": "studl-d0f82.appspot.com"
+    "project_number": "861201711474",
+    "project_id": "studl-ce618",
+    "storage_bucket": "studl-ce618.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:68376430317:android:26383f3609396f80412ee4",
+        "mobilesdk_app_id": "1:861201711474:android:a3198a60990842cd989deb",
         "android_client_info": {
           "package_name": "com.pnsrc89.studl"
         }
       },
       "oauth_client": [
         {
-          "client_id": "68376430317-eip081n5c0aqvk9ojd3vmil2er0elur0.apps.googleusercontent.com",
+          "client_id": "861201711474-s2b58un3aldki08gddfcf16t6fj1ebdt.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyATAhbxpgttInLU9z3MlaJ2dwMSvdz7gxA"
+          "current_key": "AIzaSyDl8MOzLInCH_I7_AqETdbthWB_IGBsbLQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "68376430317-eip081n5c0aqvk9ojd3vmil2er0elur0.apps.googleusercontent.com",
+              "client_id": "861201711474-s2b58un3aldki08gddfcf16t6fj1ebdt.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "861201711474-1fbis9kdb5p6c2lo4mg2mk9av5khbmj9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "me.pnsrc.studl"
+              }
             }
           ]
         }
